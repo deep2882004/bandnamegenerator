@@ -1,0 +1,19 @@
+
+      <%- include("partials/header.ejs") %>
+   
+  <body>
+    
+   <div class="full-form">
+       <div class="from-background">
+      <form action="/getpost" method="POST">
+        <input class="input-title" type="text" name="Blogtitle" placeholder="write your title" ><br>
+        <textarea class="input-text" name="Blogtext" placeholder="Write your tweet here"></textarea><br>
+            <input class="button2" type="submit" name="Create" value="Create">
+           
+
+      </form> 
+    </div>
+    </div>
+  </body>
+
+  <%- include("partials/footer.ejs")%>

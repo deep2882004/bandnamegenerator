@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Alegreya", serif;
+    
+   
+}
+
+.toggle-btn{
+   display: none;
+}
+
+.full-nav{
+    background-color: #FFC5C5;
+    height: 80px;
+    display: flex;
+   justify-content: space-between;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.bloglogo{
+    font-size: 35px;
+    color: #89B9AD;
+    font-weight: 850;
+    padding: 10px 25px 0;
+    cursor: pointer;
+   
+}
+
+.nav-bar{
+    display: flex;
+    font-size: 22px;
+    gap: 50px;
+    padding: 26px 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.nav-bar li a {
+    color: #89B9AD;
+}
+
+.button1 {
+    border: 2px solid  #89B9AD;
+    border-radius: 20px;
+    padding: 8px;
+    transition: ease-in-out 0.5s;
+}
+
+.button1:hover{
+    background-color: #89B9AD;
+    color: white;
+}
+
+.full-form{
+  background-image: url(images/blog-background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    height: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+   padding-top: 100px;
+   padding-left: 32%;
+  
+
+   
+   
+  
+}
+
+.input-title{
+    border: 4px solid #C7DCA7;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+    outline: none;
+    color: #89B9AD;
+    font-weight: 600;
+    height: 60px;
+    margin-bottom: 10px;
+    
+    
+
+}
+.input-text{
+    border: 4px solid #C7DCA7;
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    outline: none;
+    color: #89B9AD;
+    font-weight: 600;
+    resize: none;
+    line-height: 1.5;
+}
+
+.input-title::placeholder, .input-text::placeholder {
+    color: #aaa;
+}
+
+.input-title::placeholder{
+   padding: 12px 0;
+}
+ .from-background{
+    background-color: #89B9AD;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0.1, 0.2, 0.5);
+   
+ }
+
+ .button2{
+    background-color: white;
+    border: 2px solid  #89B9AD;
+    border-radius: 20px;
+    padding: 8px 10px;
+    transition: ease-in-out 0.5s;
+    font-size: 20px;
+    color: #89B9AD;
+    margin-left: 500px;
+    margin-top: 10px;
+ }
+
+ .button2:hover{
+    border: 2px solid white;
+    background-color: #89B9AD;
+    color: white;
+ }
+ .edit-post-h1{
+margin-right: 47%;
+ }
+
+ .all-icons{
+   
+    font-size: 30px;
+   padding-top: 30px;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+
+   
+ }
+
+ .all-icons a {
+    color:whitesmoke;
+    transition: ease 0.5s;
+ }
+  
+ .all-icons a:hover{
+    transform: translateY(-30%);
+ }
+
+
+ .footer-line{
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 10px;
+ }
+
+ .last-line {
+    text-align: center;
+    background-color: #C4D7FF;
+
+}
+
+.last-line h2 {
+    font-size: 19px;
+    text-transform: capitalize;
+}
+ 
+
+ .full-footer-back{
+    background-color: #87A2FF;
+    height: 238px;
+ }
+
+.home-background{
+    background-color: #FFF4B5;
+    height: 600px;
+}
+
+ .posts-seen{
+    color: #89B9AD;
+    text-align: center;
+    font-size: 45px;
+ }
+
+ .line{
+    height: 2px;
+    background-color: #89B9AD;
+ }
+
+ .POST-BOX{
+    border: 4px solid #89B9AD;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    overflow-wrap: break-word;
+    margin: 40px auto; 
+   
+ }
+
+ .BUTTONS-3{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 8px 0px;
+ }
+ .button-3{
+    background-color: white;
+    border: 2px solid  #89B9AD;
+    border-radius: 20px;
+    padding: 8px 10px;
+    transition: ease-in-out 0.5s;
+    font-size: 20px;
+    color: #89B9AD;
+ }
+
+ .button-3:hover{
+    border: 2px solid white;
+    background-color: #89B9AD;
+    color: white;
+ }
+
+ .button-4{
+    background-color: white;
+    border: 2px solid  #89B9AD;
+    border-radius: 20px;
+    padding: 8px 10px;
+    transition: ease-in-out 0.5s;
+    font-size: 20px;
+    color: #89B9AD;
+ }
+
+ .button-4:hover{
+    border: 2px solid white;
+    background-color: #89B9AD;
+    color: white;
+ }
+ .nopostyet{
+    border: 2px solid #89B9AD;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px; 
+    margin: 40px auto;
+    text-align: center; 
+ }
+
+ .post-title{
+    color: #6256CA;
+ }
+ .post-text{
+    color: #117554;
+ }
+
+ 
+ @media only screen and (max-width:1440px){
+   .full-form{    
+       padding-left: 25%; 
+ }
+
+ .edit-post-h1{
+   margin-right: 35%;
+    } 
+
+
+}
+
+@media only screen and (max-width:1024px){
+
+    
+  .nav-bar{
+  
+   font-size: 20px;
+  
+   padding: 26px 80px;
+  }
+  .footer-line{
+   font-size: 14px;
+}
+.last-line h2 {
+   font-size: 15px;
+   text-transform: capitalize;
+}
+
+.full-form{    
+   padding-left: 18%; 
+}
+
+}
+
+@media only screen and (max-width:768px){
+   .toggle-btn{
+      display: block;
+      padding: 30px 40px;
+      font-size: 20px;
+      z-index: 999;
+   } 
+
+   .nav-bar{
+     position: absolute;
+     width: 100%;
+     flex-direction: column;
+     top: -160px;
+     text-align: center;
+     background-color: #C4D7FF;
+     transition: top 0.5s ease-in-out;
+   }
+
+  .active{
+   top: 0;
+  }
+
+   .full-nav{
+      overflow: initial 
+     }
+
+     .full-form{    
+      padding-left: 5%;
+       
+   }
+
+   .footer-line{
+      font-size: 12px;
+   }
+   .edit-post-h1{
+      margin-right: 8%;
+       } 
+}
+
+@media only screen and (max-width:425px){
+   
+   
+   .bloglogo{
+      font-size: 25px;
+      padding: 18px 25px 0;
+  }
+
+  .full-form{    
+   padding-left: 1%;
+    
+  
+}
+.button2{
+   margin-left: 255px
+}
+.POST-BOX{
+
+   width: 80%;
+  padding: 10px;  
+  
+}
+
+.last-line h2 {
+   font-size: 12px;
+   
+}
+.edit-post-h1{
+  margin: auto;
+    } 
+}
+
+@media only screen and (max-width:375px){
+  
+   .button-for-margin{
+      margin-left: 200px
+
+   }
+}
+
+@media only screen and (max-width:320px){
+   .button2{
+      margin-left: 180px
+   }
+   .button-for-margin{
+      margin-left: 150px
+
+   }
+}

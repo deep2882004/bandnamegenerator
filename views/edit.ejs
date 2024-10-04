@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="full-form">
+    <h1 class="edit-post-h1">Edit Post</h1>
+<div class="from-background">
+<form action="/editpost"  method="POST">
+    <label for="titlechange"></label>
+<input class="input-title" type="text" name="titlechange" value="<%= post.title %>" required><br>
+<label for="textchange"></label>
+<label for="textchange"></label>
+<textarea class="input-text" name="textchange" required><%= post.text %></textarea><br>
+<input class="button2 button-for-margin" type="submit" value="update post">
+
+</form>
+</div>
+</div>
+
+<%- include("partials/footer.ejs")%>

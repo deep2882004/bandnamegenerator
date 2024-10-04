@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<div class="home-background">
+<h1 class="posts-seen">Posts</h1>
+<p class="line"></p>
+
+<% if (locals.post.title && locals.post.text) { %>
+  <div class="POST-BOX">
+   <h1 class="post-title"><%= post.title%></h1>
+   <p class="line"></p>
+   <h2  class="post-text"><%= post.text %></h2>
+   <p class="line"></p>
+   <div class="BUTTONS-3">
+   <form action="/edithepost" method="POST"><input class="button-3"  type="submit" value="Edit"></form>
+   <form action="/deletepost" method="POST">
+  <input class="button-4" type="submit" value="Delete">
+</form>
+</div>
+<% } else {%>
+   
+    <h1 class="nopostyet">No Post Yet 🥲</h1>
+
+<% } %>
+</div>
+</div>
+<%- include("partials/footer.ejs")%>
