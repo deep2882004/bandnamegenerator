@@ -18,6 +18,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/home", (req, res) => {
+  res.render("home.ejs", {
+    post: post,
+  });
+});
+
 app.get("/create", (req, res) => {
   res.render("create.ejs");
 });
@@ -28,7 +34,7 @@ app.post("/getpost", (req, res) => {
 
   post = { title, text };
 
-  res.redirect("/");
+  res.redirect("/home");
 });
 
 app.post("/editpost", (req, res) => {
@@ -36,7 +42,7 @@ app.post("/editpost", (req, res) => {
   const text = req.body.textchange;
 
   post = { title, text };
-  res.redirect("/");
+  res.redirect("/home");
 });
 
 app.post("/edithepost", (req, res) => {
@@ -46,7 +52,7 @@ app.post("/edithepost", (req, res) => {
 app.post("/deletepost", (req, res) => {
   post = { title: "", text: "" };
 
-  res.redirect("/");
+  res.redirect("/home");
 });
 
 app.listen(port, () => {
