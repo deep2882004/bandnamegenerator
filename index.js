@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let post = { title: "", text: "" };
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("home.ejs", {
     post: post,
   });
@@ -28,7 +28,7 @@ app.post("/getpost", (req, res) => {
 
   post = { title, text };
 
-  res.redirect("/home");
+  res.redirect("/");
 });
 
 app.post("/editpost", (req, res) => {
@@ -36,7 +36,7 @@ app.post("/editpost", (req, res) => {
   const text = req.body.textchange;
 
   post = { title, text };
-  res.redirect("/home");
+  res.redirect("/");
 });
 
 app.post("/edithepost", (req, res) => {
@@ -46,7 +46,7 @@ app.post("/edithepost", (req, res) => {
 app.post("/deletepost", (req, res) => {
   post = { title: "", text: "" };
 
-  res.redirect("/home");
+  res.redirect("/");
 });
 
 app.listen(port, () => {
